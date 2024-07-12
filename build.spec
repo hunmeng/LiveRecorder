@@ -6,7 +6,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['../main.py'],
+    ['live_recorder.py'],
     pathex=[],
     binaries=[],
     datas=collect_data_files('streamlink.plugins', include_py_files=True),
@@ -30,7 +30,7 @@ exe = EXE(
     a.datas,
     [],
     name='LiveRecorder',
-    icon='bambino.ico',
+    icon='',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
